@@ -5,18 +5,15 @@
     box-sizing: border-box;
 }
 
+.button{
+    padding: 5px 10px;
+    background-color:#0061FF ;
+    color: white;
+}
+
 /* debug */
 
-.header-top{
-    border: 2px dashed black;
-    background-color: aqua;
 
-}
-
-li{
-    border: 2px dashed black;
-    padding: 20px 10px;
-}
 
 .header-bottom{
     border: 2px dashed black;
@@ -80,14 +77,29 @@ h1{
     min-height: 50px;
 }
 
-.header-top > .l-col > ul > li{
+.header-top .l-col ul li{
     text-decoration: none;
     display: inline-block;
+    padding: 20px 10px;
+    color: black;
 }
 
-.header-top > .r-col > ul > li{
+.l-col ul :first-child{
+    vertical-align: middle;
+}
+
+
+.header-top .l-col ul li a{
+    text-decoration: none;
+}
+
+.header-top .r-col ul li{
     text-decoration: none;
     display: inline-block;
+    padding: 20px 10px;
+}
+.header-top .r-col ul li a{
+    text-decoration: none;
 }
 
     /* header-bottom */
