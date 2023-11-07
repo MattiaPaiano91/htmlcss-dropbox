@@ -9,25 +9,13 @@
     padding: 5px 10px;
     background-color:#0061FF ;
     color: white;
+    display: inline-block;
 }
+
 
 /* debug */
 
 
-
-.header-bottom{
-    border: 2px dashed black;
-    background-color: cadetblue;
-}
-
-h1{
-    font-size: 4.5em;
-}
-
-.b-h-img, .b-h-text{
-    background-color: darkgoldenrod;
-    border: 2px dashed black;
-}
 
 .card{
     background-color: darkgreen;
@@ -111,20 +99,43 @@ h1{
     flex-wrap: wrap;
 }
 
-.header-bottom > h1{
-    margin: 50px 0px;
+h1{
+    font-size: 4.5em;
 }
 
+.header-bottom > h1{
+    margin: 100px 0px;
+}
+
+.b-section{
+    width: 100%;
+    background-color:#B4D0E7;
+}
+
+.b-h-text > .button > a{
+    color: white;
+    text-decoration: none;
+}
+
+.b-h-text > *{
+    margin-bottom: 40px;
+}
 
 .b-h-text{
-    width: 50%;
+    width: 30%;
     min-height: 400px;
 }
 
 .b-h-img{
-    width: 50%;
+    width: 70%;
     min-height: 400px;
     margin-bottom: -50px;
+}
+
+.b-h-img > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -265,3 +276,4 @@ footer > nav{
     justify-content: space-between;
     width: 70%;
   }
+
