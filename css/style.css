@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .button {
@@ -23,11 +26,15 @@ li {
 
   /* header-top */
 
+
+
 .header-top {
   display: flex;
   justify-content: space-between;
   width: 100%;
   min-height: 50px;
+  position: fixed;
+  background-color: white;
 }
 
 .header-top .l-col ul li {
@@ -121,6 +128,7 @@ h1 {
   width: 60%;
   margin: auto;
 }
+
 
 .main-container-1rst-row > div > h2 {
   margin-top: 100px;
@@ -276,7 +284,7 @@ h1 {
     margin: 20px 0px;
 }
 
-#white{
+.white{
     background-color: white;
     color: black;
     border: 1px solid rgba(128, 128, 128, 0.5);
@@ -323,7 +331,7 @@ h1 {
 .margin-3rd{
     margin: 0px 15px;
 }
- 
+
 /* fine terza sezione */
 
 
@@ -348,10 +356,32 @@ h1 {
   background-color: blueviolet;
 }
 
+
+
+
  /* inizio quinta sessione */
 
-.info-box {
+.main-container-5th-row{
+  background-color: #B4D0E7 ;
+}
+
+.info-container{
+  margin: 0 auto;
   width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.info-box-5th {
+  width: 40%;
+}
+
+.button-box{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 
@@ -359,24 +389,70 @@ h1 {
 
  /* inizio sezione faq */
 
+.faq-row{
+  margin-top: 50px;
+}
+
+.faq-row > h3{
+  padding-bottom:40px ;
+}
+
+.faq-row > ul > li{
+  padding: 30px 0px ;
+}
+
+.faq-row > ul > li > i{
+  padding-left: 600px;
+}
+
+/* footer */
+
 footer {
   background-color: black;
   color: white;
+  min-height: 200px;
 }
 
-footer > nav {
+.footer-container{
   width: 70%;
+  margin: 0 auto;
+}
+
+footer > .footer-container > nav{
+  
   display: flex;
-  margin: auto;
+  
   justify-content: center;
 }
 
-footer nav ul li {
+footer > .footer-container > nav > ul > li {
   display: inline-block;
 }
 
-footer nav ul {
+footer > .footer-container > nav > ul {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
+  padding-top: 40px;
 }
+
+.vertical-list > li{
+  padding: 10px 0px;
+}
+
+.vertical-list :first-child{
+  padding: 10px 0px;
+}
+
+.bottom-border{
+  border-bottom: 1px solid white;
+}
+
+.bottom-footer{
+  padding: 50px 0px;
+}
+
+.bottom-footer :nth-child(3){
+    padding-left:15px;
+}
+
