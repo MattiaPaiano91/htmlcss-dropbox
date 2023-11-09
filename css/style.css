@@ -8,7 +8,12 @@
 
 }
 
+
 /* generali */
+
+html{
+  scroll-behavior: smooth;
+}
 
 .button {
   padding: 5px 10px;
@@ -68,6 +73,8 @@ h3{
   text-decoration: none;
 }
 
+
+
 /* header-bottom */
 
 .b-section {
@@ -96,7 +103,7 @@ h3{
 
 }
 
-.b-h-text > .icon-container > i {
+.b-h-text > .icon-container > a > i {
   font-size: 3em;
   font-weight: bold;
   padding-top: 150px;
@@ -120,11 +127,11 @@ h3{
   height: 100%;
 }
 
-
-
-.icon-container{
-  height: 100%;
+.b-h-text :nth-child(3){
+  padding-top: 20px;
 }
+
+
 
 /* fine header */
 
