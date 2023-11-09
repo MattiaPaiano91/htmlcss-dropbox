@@ -5,8 +5,10 @@
   box-sizing: border-box;
   font-family: 'Fredoka', sans-serif;
   font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
+
 }
+
+/* generali */
 
 .button {
   padding: 5px 10px;
@@ -20,6 +22,11 @@ li {
   list-style: none;
 }
 
+h3{
+  font-size: 2em;
+}
+
+/* generali */
 
 
 /* header */
@@ -63,6 +70,11 @@ li {
 
 /* header-bottom */
 
+.b-section {
+  width: 100%;
+  background-color: #b4d0e7;
+}
+
 .header-bottom {
   width: 70%;
   margin: auto;
@@ -70,27 +82,26 @@ li {
   flex-wrap: wrap;
 }
 
-h1 {
-  font-size: 4.5em;
-}
 
 .header-bottom > h1 {
   margin: 100px 0px;
+  font-size: 4.5em;
 }
 
-.b-section {
-  width: 100%;
-  background-color: #b4d0e7;
-}
 
-.b-h-text > .button > a {
-  color: white;
-  text-decoration: none;
-}
 
-.b-h-text > * {
+
+.b-h-text > *:first-child{
   margin-bottom: 40px;
+
 }
+
+.b-h-text > .icon-container > i {
+  font-size: 3em;
+  font-weight: bold;
+  padding-top: 150px;
+}
+
 
 .b-h-text {
   width: 30%;
@@ -109,10 +120,10 @@ h1 {
   height: 100%;
 }
 
-.b-h-text > div > i {
-  font-size: 3em;
-  font-weight: bold;
-  padding-top: 50px;
+
+
+.icon-container{
+  height: 100%;
 }
 
 /* fine header */
@@ -131,11 +142,12 @@ h1 {
 
 
 .main-container-1rst-row > div > h2 {
-  margin-top: 100px;
+  margin-top: 150px;
+  font-size: 3em;
 }
 
 .radio-box {
-  margin-top: 50px;
+  margin: 50px 0px;
 }
 
 .card .card-header {
@@ -147,7 +159,6 @@ h1 {
 .card-box {
   width: 100%;
   display: flex;
-  margin-top: 50px;
 }
 
 .card {
@@ -229,7 +240,7 @@ h1 {
 
 .or-bottom {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   display: flex;
   border: 1px solid rgba(128, 128, 128, 0.5);
 }
@@ -238,24 +249,23 @@ h1 {
   width: 70%;
   height: 100%;
   padding: 20px 30px;
+
 }
 
 .right {
   width: 30%;
   height: 100%;
-  padding: 20px 10px;
+  padding: 40px 10px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items:flex-start;
 }
 
 .left > * {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
-.left > h3 {
-  padding-bottom: 40px;
-}
+
 
  /* fine prima sezione */
 
@@ -343,8 +353,6 @@ h1 {
 .square-section .square {
   width: calc(100% / 3);
   height: calc(100vw / 3);
-  background-color: aquamarine;
-  border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
 }
@@ -352,12 +360,92 @@ h1 {
 .l-square {
   width: 50%;
   height: 50%;
-  border: 2px solid black;
-  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.image-container{
+  width: 50%;
+  height: 50%;
+}
 
+.image-container img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+}
 
+#green{
+  background-color: #A2D39B;
+}
+
+#brown{
+  background-color: #61082B;
+}
+
+#light-blue{
+  background-color: #0093CE;
+}
+
+#red{
+  background-color: #FF1C1C;
+}
+
+#red-2{
+  background-color: #D5001F;
+}
+
+#light-blue-2{
+  background-color: #B4D0E7;
+}
+
+#blue{
+  background-color: #0D2481;
+}
+
+#yellow{
+  background-color: #FFD830;
+}
+
+.main-image-container{
+  width: 50%;
+  height: 30%;
+}
+
+.square .main-square-container hr{
+  width: 20%;
+  margin-bottom: 40px;
+}
+
+.main-image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main-square-container{
+  padding: 0px 40px;
+}
+
+.main-square-container > *:not(hr){
+  padding-bottom: 50px;
+}
+
+/* quarta sezione */
+
+.text{
+  width: 60%;
+  margin: auto;
+  min-height: 300px;
+}
+
+.text :first-of-type{
+  margin: 40px;
+}
+
+/* fine quarta sezione */
 
  /* inizio quinta sessione */
 
@@ -370,11 +458,12 @@ h1 {
   width: 60%;
   display: flex;
   justify-content: space-between;
-  padding: 50px 0px;
+  padding: 100px 0px;
+  min-height: 200PX;
 }
 
 .info-box-5th {
-  width: 40%;
+  width: 60%;
 }
 
 .button-box{
@@ -402,7 +491,7 @@ h1 {
 }
 
 .faq-row > ul > li > i{
-  padding-left: 600px;
+  padding-left: 550px;
 }
 
 /* footer */
@@ -419,9 +508,9 @@ footer {
 }
 
 footer > .footer-container > nav{
-  
+
   display: flex;
-  
+
   justify-content: center;
 }
 
